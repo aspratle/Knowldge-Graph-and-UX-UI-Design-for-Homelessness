@@ -32,3 +32,4 @@ One of the considerations of this project is to pull out important information f
 ## Future Steps 
 
 ## Contributors 
+Smith
