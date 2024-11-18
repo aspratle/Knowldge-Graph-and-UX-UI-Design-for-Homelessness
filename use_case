@@ -1,0 +1,69 @@
+# knowledge graph generated with chatbot
+
+```mermaid
+flowchart TD
+    A["Beacon Light Mission"]
+    B["instance of"]
+    C["charitable organization"]
+    D["chapel of worship"]
+    E["located in administrative territorial entity"]
+    F["Wilmington"]
+    G["Los Angeles County"]
+    H["California"]
+    I["United States of America"]
+    J["founding"]
+    K["Curtis D. Wilbur"]
+    L["1914"]
+    M["significant person"]
+    N["Laura Sctovold-Lemp"]
+    O["October 2024"]
+    P["product, material, or service produced"]
+    Q["meal"]
+    R["bed"]
+    S["shower"]
+    T["clothing"]
+    U["case management"]
+    V["social work"]
+    W["contact information"]
+    X["525 Broad Avenue"]
+    Y["13108307063"]
+    Z["info@beaconlightmission.org"]
+    AA["https://beaconlightmission.org/"]
+    AB["member of"]
+    AC["Citygate Network"]
+    AD["Identifiers"]
+    AE["ESID 95-1661697"]
+    AF["Facebook username BeaconLightMission"]
+
+    A -->|"instance of"| B
+    B -->|"type"| C
+    B -->|"classification"| D
+    A -->|"located in administrative territorial entity"| E
+    E -->|"location"| F
+    E -->|"county"| G
+    E -->|"state"| H
+    E -->|"country"| I
+    A -->|"founded by"| J
+    J -->|"founder"| K
+    J -->|"inception"| L
+    A -->|"significant person"| M
+    M -->|"subject has role"| N
+    N -->|"end time"| O
+    A -->|"product, material, or service produced"| P
+    P -->|"quantity of meal"| Q
+    P -->|"quantity of bed"| R
+    P -->|"quantity of shower"| S
+    P -->|"clothing"| T
+    P -->|"case management"| U
+    U -->|"social work"| V
+    A -->|"contact information"| W
+    W -->|"street address"| X
+    W -->|"phone number"| Y
+    W -->|"email address"| Z
+    W -->|"official website"| AA
+    A -->|"member of"| AB
+    AB -->|"network"| AC
+    A -->|"identifiers"| AD
+    AD -->|"ESID"| AE
+    AD -->|"Facebook username"| AF
+```
