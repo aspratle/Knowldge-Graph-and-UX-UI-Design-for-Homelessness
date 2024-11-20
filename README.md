@@ -32,4 +32,9 @@ One of the considerations of this project is to pull out important information f
 ## Future Steps 
 
 ## Contributors 
-Smith
+Angelica Spratley (Jelly): [LinkedIn](https://linkedin.com/in/angelicaspratley)<br />
+
+Garrett Smith: [LinkedIn](https://linkedin.com/in/garrett55smith)
+Grazia Maszak-Prato: [LinkedIn](https://linkedin.com/in/graziaprato)
+Robert Yates: 
+Vijaya Sekar: [LinkedIn](https://linkedin.com/in/vijaya-sekar)
