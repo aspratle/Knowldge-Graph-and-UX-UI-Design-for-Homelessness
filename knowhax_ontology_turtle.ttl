@@ -1,0 +1,309 @@
+@prefix : <http://www.semanticweb.org/jellyspratley/ontologies/2024/10/untitled-ontology-2/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/jellyspratley/ontologies/2024/10/untitled-ontology-2/> .
+
+<urn:absolute:https://schema.org> rdf:type owl:Ontology ;
+                                   owl:versionInfo "This model will be refreshed entirely before each version" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://www.w3.org/2004/02/skos/core#definition
+<http://www.w3.org/2004/02/skos/core#definition> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  urn:absolute:https://schema.org/KnowHax1a236421_6ae8_4cba_9c1f_3309e5f3d958
+<urn:absolute:https://schema.org/KnowHax1a236421_6ae8_4cba_9c1f_3309e5f3d958> rdf:type owl:ObjectProperty ;
+                                                                              rdfs:label "hasEligibility"@en .
+
+
+###  urn:absolute:https://schema.org/KnowHax23b69cf7_9dbb_4369_8855_483cc07fc6dc
+<urn:absolute:https://schema.org/KnowHax23b69cf7_9dbb_4369_8855_483cc07fc6dc> rdf:type owl:ObjectProperty ;
+                                                                              rdfs:label "hasPhoneNumber"@en .
+
+
+###  urn:absolute:https://schema.org/KnowHax23fb5d42_662f_4d95_82fb_bf325adc31a1
+<urn:absolute:https://schema.org/KnowHax23fb5d42_662f_4d95_82fb_bf325adc31a1> rdf:type owl:ObjectProperty ;
+                                                                              rdfs:domain [ rdf:type owl:Restriction ;
+                                                                                            owl:onProperty <urn:absolute:https://schema.org/KnowHax23fb5d42_662f_4d95_82fb_bf325adc31a1> ;
+                                                                                            owl:someValuesFrom <urn:absolute:https://schema.org/KnowHaxd7a7731a_15e7_4c45_838c_b5ae99092505>
+                                                                                          ] ;
+                                                                              rdfs:label "hasWebsite"@en .
+
+
+###  urn:absolute:https://schema.org/KnowHax3d274825_d3ce_496a_9519_4f78db48fc11
+<urn:absolute:https://schema.org/KnowHax3d274825_d3ce_496a_9519_4f78db48fc11> rdf:type owl:ObjectProperty ;
+                                                                              rdfs:label "provides"@en .
+
+
+###  urn:absolute:https://schema.org/KnowHax6d0c0a5f_cf18_446c_99e8_5b25c3cb98e8
+<urn:absolute:https://schema.org/KnowHax6d0c0a5f_cf18_446c_99e8_5b25c3cb98e8> rdf:type owl:ObjectProperty ;
+                                                                              rdfs:label "operatesDuring"@en .
+
+
+###  urn:absolute:https://schema.org/KnowHax95a2bbd3_cc7d_43f5_985e_2421dd439828
+<urn:absolute:https://schema.org/KnowHax95a2bbd3_cc7d_43f5_985e_2421dd439828> rdf:type owl:ObjectProperty ;
+                                                                              rdfs:label "setBy"@en .
+
+
+###  urn:absolute:https://schema.org/KnowHaxa57f13ee_ae4f_4190_827d_79580eba3e12
+<urn:absolute:https://schema.org/KnowHaxa57f13ee_ae4f_4190_827d_79580eba3e12> rdf:type owl:ObjectProperty ;
+                                                                              rdfs:label "locatedAT"@en .
+
+
+###  urn:absolute:https://schema.org/KnowHaxadcd5929_1389_4dff_8151_90232bb5b33e
+<urn:absolute:https://schema.org/KnowHaxadcd5929_1389_4dff_8151_90232bb5b33e> rdf:type owl:ObjectProperty ;
+                                                                              rdfs:label "hasA"@en .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.w3.org/2002/07/owl#topDataProperty
+owl:topDataProperty rdfs:domain [ rdf:type owl:Restriction ;
+                                  owl:onProperty <urn:absolute:https://schema.org/KnowHax23fb5d42_662f_4d95_82fb_bf325adc31a1> ;
+                                  owl:someValuesFrom <urn:absolute:https://schema.org/KnowHaxd7a7731a_15e7_4c45_838c_b5ae99092505>
+                                ] ;
+                    rdfs:range xsd:string .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  urn:absolute:https://schema.org/KnowHax07de0404_8e84_497c_bc32_b4d9b969dc1a
+<urn:absolute:https://schema.org/KnowHax07de0404_8e84_497c_bc32_b4d9b969dc1a> rdf:type owl:Class ;
+                                                                              rdfs:subClassOf <urn:absolute:https://schema.org/KnowHax487a143c_f8b9_4dd3_a811_fbf2297723db> ;
+                                                                              rdfs:label "StartTime"@en .
+
+
+###  urn:absolute:https://schema.org/KnowHax0c1bcc6c_e2eb_4db4_9e97_0018ea490db6
+<urn:absolute:https://schema.org/KnowHax0c1bcc6c_e2eb_4db4_9e97_0018ea490db6> rdf:type owl:Class ;
+                                                                              rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                                                                owl:onProperty <urn:absolute:https://schema.org/KnowHax3d274825_d3ce_496a_9519_4f78db48fc11> ;
+                                                                                                owl:someValuesFrom <urn:absolute:https://schema.org/KnowHax0c1bcc6c_e2eb_4db4_9e97_0018ea490db6>
+                                                                                              ] ;
+                                                                              rdfs:label "Service"@en .
+
+
+###  urn:absolute:https://schema.org/KnowHax1e0492f4_c05f_400d_8215_73aeda6b8fa3
+<urn:absolute:https://schema.org/KnowHax1e0492f4_c05f_400d_8215_73aeda6b8fa3> rdf:type owl:Class ;
+                                                                              rdfs:subClassOf <urn:absolute:https://schema.org/KnowHax0c1bcc6c_e2eb_4db4_9e97_0018ea490db6> ;
+                                                                              rdfs:label "Clothing"@en .
+
+
+###  urn:absolute:https://schema.org/KnowHax233fe0c4_6b39_4e32_8204_dedb3d12f378
+<urn:absolute:https://schema.org/KnowHax233fe0c4_6b39_4e32_8204_dedb3d12f378> rdf:type owl:Class ;
+                                                                              rdfs:subClassOf <urn:absolute:https://schema.org/KnowHax487a143c_f8b9_4dd3_a811_fbf2297723db> ;
+                                                                              rdfs:label "EndTime"@en .
+
+
+###  urn:absolute:https://schema.org/KnowHax3cd0b088_bfa1_41e8_8836_b62c18cba9cd
+<urn:absolute:https://schema.org/KnowHax3cd0b088_bfa1_41e8_8836_b62c18cba9cd> rdf:type owl:Class ;
+                                                                              rdfs:subClassOf <urn:absolute:https://schema.org/KnowHax0c1bcc6c_e2eb_4db4_9e97_0018ea490db6> ;
+                                                                              rdfs:label "Women"@en .
+
+
+###  urn:absolute:https://schema.org/KnowHax443478e2_6c1f_44c1_adca_f37dd2c88c56
+<urn:absolute:https://schema.org/KnowHax443478e2_6c1f_44c1_adca_f37dd2c88c56> rdf:type owl:Class ;
+                                                                              rdfs:subClassOf <urn:absolute:https://schema.org/KnowHax0c1bcc6c_e2eb_4db4_9e97_0018ea490db6> ;
+                                                                              rdfs:label "HouseholdNeeds"@en .
+
+
+###  urn:absolute:https://schema.org/KnowHax487a143c_f8b9_4dd3_a811_fbf2297723db
+<urn:absolute:https://schema.org/KnowHax487a143c_f8b9_4dd3_a811_fbf2297723db> rdf:type owl:Class ;
+                                                                              rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                                                                owl:onProperty <urn:absolute:https://schema.org/KnowHax6d0c0a5f_cf18_446c_99e8_5b25c3cb98e8> ;
+                                                                                                owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                                owl:onClass <urn:absolute:https://schema.org/KnowHax487a143c_f8b9_4dd3_a811_fbf2297723db>
+                                                                                              ] ;
+                                                                              rdfs:label "OpeningHour"@en .
+
+
+###  urn:absolute:https://schema.org/KnowHax6642c231_5b4f_4ab7_9000_5031bbf3f90e
+<urn:absolute:https://schema.org/KnowHax6642c231_5b4f_4ab7_9000_5031bbf3f90e> rdf:type owl:Class ;
+                                                                              rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                                                                owl:onProperty <urn:absolute:https://schema.org/KnowHaxa57f13ee_ae4f_4190_827d_79580eba3e12> ;
+                                                                                                owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                                owl:onClass <urn:absolute:https://schema.org/KnowHax6642c231_5b4f_4ab7_9000_5031bbf3f90e>
+                                                                                              ] ;
+                                                                              rdfs:label "Zipcode"@en .
+
+
+###  urn:absolute:https://schema.org/KnowHax671eec30_5840_4df2_9a0a_d94ea627d96c
+<urn:absolute:https://schema.org/KnowHax671eec30_5840_4df2_9a0a_d94ea627d96c> rdf:type owl:Class ;
+                                                                              rdfs:subClassOf <urn:absolute:https://schema.org/KnowHaxd02bb215_7d56_4afe_91c9_38d5a411a81e> ;
+                                                                              rdfs:label "Location"@en .
+
+
+###  urn:absolute:https://schema.org/KnowHax693110bb_dc65_48fa_a9ac_e0c081180e16
+<urn:absolute:https://schema.org/KnowHax693110bb_dc65_48fa_a9ac_e0c081180e16> rdf:type owl:Class ;
+                                                                              rdfs:subClassOf <urn:absolute:https://schema.org/KnowHax0c1bcc6c_e2eb_4db4_9e97_0018ea490db6> ;
+                                                                              rdfs:label "Child"@en .
+
+
+###  urn:absolute:https://schema.org/KnowHax6e4c45f1_206f_468e_99fd_a3d78c6a03e1
+<urn:absolute:https://schema.org/KnowHax6e4c45f1_206f_468e_99fd_a3d78c6a03e1> rdf:type owl:Class ;
+                                                                              rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                                                                owl:onProperty <urn:absolute:https://schema.org/KnowHaxa57f13ee_ae4f_4190_827d_79580eba3e12> ;
+                                                                                                owl:someValuesFrom <urn:absolute:https://schema.org/KnowHax6e4c45f1_206f_468e_99fd_a3d78c6a03e1>
+                                                                                              ] ;
+                                                                              rdfs:label "Country"@en .
+
+
+###  urn:absolute:https://schema.org/KnowHax7278ce53_b38d_4c89_8742_df4a099372f0
+<urn:absolute:https://schema.org/KnowHax7278ce53_b38d_4c89_8742_df4a099372f0> rdf:type owl:Class ;
+                                                                              rdfs:subClassOf <urn:absolute:https://schema.org/KnowHaxd02bb215_7d56_4afe_91c9_38d5a411a81e> ;
+                                                                              rdfs:label "Medical"@en .
+
+
+###  urn:absolute:https://schema.org/KnowHax769a9c9d_68b2_4700_a8e8_8a6c199c8588
+<urn:absolute:https://schema.org/KnowHax769a9c9d_68b2_4700_a8e8_8a6c199c8588> rdf:type owl:Class ;
+                                                                              rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                                                                owl:onProperty <urn:absolute:https://schema.org/KnowHaxa57f13ee_ae4f_4190_827d_79580eba3e12> ;
+                                                                                                owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                                owl:onClass <urn:absolute:https://schema.org/KnowHax769a9c9d_68b2_4700_a8e8_8a6c199c8588>
+                                                                                              ] ;
+                                                                              rdfs:label "State"@en .
+
+
+###  urn:absolute:https://schema.org/KnowHax7814f4da_50d1_43b1_bb03_0fd1a6fd227b
+<urn:absolute:https://schema.org/KnowHax7814f4da_50d1_43b1_bb03_0fd1a6fd227b> rdf:type owl:Class ;
+                                                                              rdfs:subClassOf <urn:absolute:https://schema.org/KnowHax0c1bcc6c_e2eb_4db4_9e97_0018ea490db6> ;
+                                                                              rdfs:label "Transportation"@en .
+
+
+###  urn:absolute:https://schema.org/KnowHax8455247b_69f9_40a6_9a4b_883985117715
+<urn:absolute:https://schema.org/KnowHax8455247b_69f9_40a6_9a4b_883985117715> rdf:type owl:Class ;
+                                                                              rdfs:subClassOf <urn:absolute:https://schema.org/KnowHax487a143c_f8b9_4dd3_a811_fbf2297723db> ;
+                                                                              rdfs:label "DayofWeek"@en .
+
+
+###  urn:absolute:https://schema.org/KnowHax91397a22_ea08_49a8_89f1_678dfea3e05f
+<urn:absolute:https://schema.org/KnowHax91397a22_ea08_49a8_89f1_678dfea3e05f> rdf:type owl:Class ;
+                                                                              rdfs:subClassOf <urn:absolute:https://schema.org/KnowHaxd02bb215_7d56_4afe_91c9_38d5a411a81e> ;
+                                                                              rdfs:label "Citizen"@en .
+
+
+###  urn:absolute:https://schema.org/KnowHax932fcabc_13a0_41aa_92b1_ca97f9b9c5ee
+<urn:absolute:https://schema.org/KnowHax932fcabc_13a0_41aa_92b1_ca97f9b9c5ee> rdf:type owl:Class ;
+                                                                              rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                                                                owl:onProperty <urn:absolute:https://schema.org/KnowHax23b69cf7_9dbb_4369_8855_483cc07fc6dc> ;
+                                                                                                owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                                owl:onClass <urn:absolute:https://schema.org/KnowHax932fcabc_13a0_41aa_92b1_ca97f9b9c5ee>
+                                                                                              ] ;
+                                                                              rdfs:label "Phone"@en .
+
+
+###  urn:absolute:https://schema.org/KnowHax941a8892_2f2a_4997_9c2d_b6c37b61e534
+<urn:absolute:https://schema.org/KnowHax941a8892_2f2a_4997_9c2d_b6c37b61e534> rdf:type owl:Class ;
+                                                                              rdfs:subClassOf <urn:absolute:https://schema.org/KnowHax0c1bcc6c_e2eb_4db4_9e97_0018ea490db6> ;
+                                                                              rdfs:label "Technology"@en .
+
+
+###  urn:absolute:https://schema.org/KnowHaxb518c14b_b2fd_4dca_b04c_941998d9e6fd
+<urn:absolute:https://schema.org/KnowHaxb518c14b_b2fd_4dca_b04c_941998d9e6fd> rdf:type owl:Class ;
+                                                                              rdfs:subClassOf <urn:absolute:https://schema.org/KnowHax0c1bcc6c_e2eb_4db4_9e97_0018ea490db6> ;
+                                                                              rdfs:label "Medical"@en .
+
+
+###  urn:absolute:https://schema.org/KnowHaxc0464c8f_e4f0_4c52_be57_418695412120
+<urn:absolute:https://schema.org/KnowHaxc0464c8f_e4f0_4c52_be57_418695412120> rdf:type owl:Class ;
+                                                                              rdfs:subClassOf <urn:absolute:https://schema.org/KnowHax0c1bcc6c_e2eb_4db4_9e97_0018ea490db6> ;
+                                                                              rdfs:label "Food"@en .
+
+
+###  urn:absolute:https://schema.org/KnowHaxca2d246f_d143_4075_accf_0768293ace6b
+<urn:absolute:https://schema.org/KnowHaxca2d246f_d143_4075_accf_0768293ace6b> rdf:type owl:Class ;
+                                                                              rdfs:subClassOf <urn:absolute:https://schema.org/KnowHax0c1bcc6c_e2eb_4db4_9e97_0018ea490db6> ;
+                                                                              rdfs:label "Career"@en .
+
+
+###  urn:absolute:https://schema.org/KnowHaxce8720ee_3950_401e_a574_1a0de0517b23
+<urn:absolute:https://schema.org/KnowHaxce8720ee_3950_401e_a574_1a0de0517b23> rdf:type owl:Class ;
+                                                                              rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                                                                owl:onProperty <urn:absolute:https://schema.org/KnowHaxa57f13ee_ae4f_4190_827d_79580eba3e12> ;
+                                                                                                owl:someValuesFrom <urn:absolute:https://schema.org/KnowHaxce8720ee_3950_401e_a574_1a0de0517b23>
+                                                                                              ] ;
+                                                                              rdfs:label "City"@en .
+
+
+###  urn:absolute:https://schema.org/KnowHaxd02bb215_7d56_4afe_91c9_38d5a411a81e
+<urn:absolute:https://schema.org/KnowHaxd02bb215_7d56_4afe_91c9_38d5a411a81e> rdf:type owl:Class ;
+                                                                              rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                                                                owl:onProperty <urn:absolute:https://schema.org/KnowHax1a236421_6ae8_4cba_9c1f_3309e5f3d958> ;
+                                                                                                owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                                owl:onClass <urn:absolute:https://schema.org/KnowHaxd02bb215_7d56_4afe_91c9_38d5a411a81e>
+                                                                                              ] ;
+                                                                              rdfs:label "Eligibility Requirement"@en .
+
+
+###  urn:absolute:https://schema.org/KnowHaxd7a7731a_15e7_4c45_838c_b5ae99092505
+<urn:absolute:https://schema.org/KnowHaxd7a7731a_15e7_4c45_838c_b5ae99092505> rdf:type owl:Class ;
+                                                                              rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                                                                owl:onProperty <urn:absolute:https://schema.org/KnowHax23fb5d42_662f_4d95_82fb_bf325adc31a1> ;
+                                                                                                owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                                owl:onClass <urn:absolute:https://schema.org/KnowHaxd7a7731a_15e7_4c45_838c_b5ae99092505>
+                                                                                              ] ;
+                                                                              rdfs:label "Website"@en .
+
+
+###  urn:absolute:https://schema.org/KnowHaxe62aa2ea_3d54_4dc8_85dd_70796ff67c4c
+<urn:absolute:https://schema.org/KnowHaxe62aa2ea_3d54_4dc8_85dd_70796ff67c4c> rdf:type owl:Class ;
+                                                                              rdfs:subClassOf <urn:absolute:https://schema.org/KnowHaxd02bb215_7d56_4afe_91c9_38d5a411a81e> ;
+                                                                              rdfs:label "Demographic"@en .
+
+
+###  urn:absolute:https://schema.org/KnowHaxef93c9f5_e77c_464e_a7ba_17ef9a11163c
+<urn:absolute:https://schema.org/KnowHaxef93c9f5_e77c_464e_a7ba_17ef9a11163c> rdf:type owl:Class ;
+                                                                              rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                                                                owl:onProperty <urn:absolute:https://schema.org/KnowHaxa57f13ee_ae4f_4190_827d_79580eba3e12> ;
+                                                                                                owl:someValuesFrom <urn:absolute:https://schema.org/KnowHax6642c231_5b4f_4ab7_9000_5031bbf3f90e>
+                                                                                              ] ;
+                                                                              rdfs:label "Organization"@en ;
+                                                                              <http://www.w3.org/2004/02/skos/core#definition> "Any government or non-government entity that provides free or paid resources to the homeless community" .
+
+
+###  urn:absolute:https://schema.org/KnowHaxfecb0c36_6880_4f6f_9e6e_d5dc9a50e2de
+<urn:absolute:https://schema.org/KnowHaxfecb0c36_6880_4f6f_9e6e_d5dc9a50e2de> rdf:type owl:Class ;
+                                                                              rdfs:subClassOf <urn:absolute:https://schema.org/KnowHax0c1bcc6c_e2eb_4db4_9e97_0018ea490db6> ;
+                                                                              rdfs:label "SocialServices"@en .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  urn:absolute:https://schema.org/KnowHax3514ccf2_53af_4f8b_ae7b_20b620a7a6e5
+<urn:absolute:https://schema.org/KnowHax3514ccf2_53af_4f8b_ae7b_20b620a7a6e5> rdf:type owl:NamedIndividual ,
+                                                                                       <urn:absolute:https://schema.org/KnowHaxef93c9f5_e77c_464e_a7ba_17ef9a11163c> ,
+                                                                                       [ rdf:type owl:Restriction ;
+                                                                                         owl:onProperty owl:topObjectProperty ;
+                                                                                         owl:someValuesFrom <urn:absolute:https://schema.org/KnowHaxef93c9f5_e77c_464e_a7ba_17ef9a11163c>
+                                                                                       ] ;
+                                                                              rdfs:label "Food Bank"@en ;
+                                                                              <http://www.w3.org/2004/02/skos/core#definition> "Any organization that distributes food in any manner (includes but not limited to pantries, hot meal pickups, and more)" .
+
+
+###  urn:absolute:https://schema.org/KnowHax7cee001d_b4a1_404f_9067_a63b7433932e
+<urn:absolute:https://schema.org/KnowHax7cee001d_b4a1_404f_9067_a63b7433932e> rdf:type owl:NamedIndividual ,
+                                                                                       <urn:absolute:https://schema.org/KnowHaxef93c9f5_e77c_464e_a7ba_17ef9a11163c> ,
+                                                                                       [ rdf:type owl:Restriction ;
+                                                                                         owl:onProperty owl:topObjectProperty ;
+                                                                                         owl:someValuesFrom <urn:absolute:https://schema.org/KnowHaxef93c9f5_e77c_464e_a7ba_17ef9a11163c>
+                                                                                       ] ;
+                                                                              rdfs:label "Shelter"@en ;
+                                                                              <http://www.w3.org/2004/02/skos/core#definition> "Any organization that provides temporary or permanent housing" .
+
+
+###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi
