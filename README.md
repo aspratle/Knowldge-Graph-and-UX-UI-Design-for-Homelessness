@@ -21,7 +21,10 @@ Sample shelter and food bank datasets were provided by Dr. Chen that spanned acr
 
 One of the considerations of this project is to pull out important information from the unstructured text column that can enhance Knowledge Graph and UI searchability and overall user experience. 
 
-## Analysis 
+## Ontology
+[Web Protege](https://webprotege.stanford.edu/) desktop was used to map out the classes, object properties, data properties, and instances.  This image was created and used to develop the ontology:
+
+![Ontology Diagram](ontology.png)
 
 ### Knowledge Graph 
 
