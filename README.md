@@ -30,8 +30,16 @@ One of the considerations of this project is to pull out important information f
 Two knowledge graphs were created for the project.  The first knowledge graph focused on preparing a text document from the static files, reading in the custom ontology turtle file, and using an OpenAI API environment to generate a Cypher Script.  Here is some snapshots of the code (Full Code Can be Found Here):
 
 1. Creating a document.txt file from the 3 CSV files given
+![Documents](images/documentcode.png)
+
 2. Chunking up the document.txt file and creating a Graph object to read in custom ontology
+![Chunking](images/chunkingcode.png)
+
 3. Giving the LLM a specific system message and prompt to produce Cypher code that then can be read into Neo4j
+![Prompt](images/systemprompt.png)
+
+4. Post-processing the text to make a Knowledge Graph on Neo4j Aura.  In this image it is showing the age eligibility requirement for a Senior Food Program. 
+![KG1](images/LLMgraph.png)
 
 
 
