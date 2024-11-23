@@ -70,7 +70,10 @@ The ontology, parent-child nodes, data cleanup were all done manually.  After th
 
 1.  Our Knowledge Graph and UX/UI design was purely focused on People Experiencing Homelessness (PEH) we would like to expand it to government stakeholders as well
 2.  Refining our ontology is an ongoing process and would need to be updated as new data comes in
-3.  The UX/UI design will be updated for enhanced functionality and to expand across multiple end-user stories 
+3.  The UX/UI design will be updated for enhanced functionality and to expand across multiple end-user stories
+
+## Additional Analysis 
+### Benefit Analysis 
 
 ## Contributors 
 - Name:  Angelica Spratley (Jelly)  Project Role:  Technical and Knowledge Graph Lead  LinkedIn: [LinkedIn](https://linkedin.com/in/angelicaspratley)
