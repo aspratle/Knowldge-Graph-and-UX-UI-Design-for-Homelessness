@@ -73,9 +73,9 @@ The ontology, parent-child nodes, data cleanup were all done manually.  After th
 3.  The UX/UI design will be updated for enhanced functionality and to expand across multiple end-user stories 
 
 ## Contributors 
-Name:  Angelica Spratley (Jelly)  Project Role:  Technical and Knowledge Graph Lead  LinkedIn: [LinkedIn](https://linkedin.com/in/angelicaspratley)
-Name:  Garrett Smith  Project Role:  Business and Project Mgmt Lead  LinkedIn: [LinkedIn](https://linkedin.com/in/garrett55smith)
-Name:  Grazia Maszak-Prato  Project Role: UX/UI Lead LinkedIn: [LinkedIn](https://linkedin.com/in/graziaprato)
-Name:  Vijaya Sekar  Project Role:  Technical and Knowledge Graph Lead LinkedIn: [LinkedIn](https://linkedin.com/in/vijaya-sekar)
-Name:  Robert Yates Project Role:  Additional Analysis 
-Name:  Will Isenberg Project Role:  Front-End UI Designer 
+- Name:  Angelica Spratley (Jelly)  Project Role:  Technical and Knowledge Graph Lead  LinkedIn: [LinkedIn](https://linkedin.com/in/angelicaspratley)
+- Name:  Garrett Smith  Project Role:  Business and Project Mgmt Lead  LinkedIn: [LinkedIn](https://linkedin.com/in/garrett55smith)
+- Name:  Grazia Maszak-Prato  Project Role: UX/UI Lead LinkedIn: [LinkedIn](https://linkedin.com/in/graziaprato)
+- Name:  Vijaya Sekar  Project Role:  Technical and Knowledge Graph Lead LinkedIn: [LinkedIn](https://linkedin.com/in/vijaya-sekar)
+- Name:  Robert Yates Project Role:  Additional Analysis 
+- Name:  Will Isenberg Project Role:  Front-End UI Designer 
