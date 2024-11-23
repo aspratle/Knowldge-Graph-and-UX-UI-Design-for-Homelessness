@@ -78,4 +78,4 @@ The ontology, parent-child nodes, data cleanup were all done manually.  After th
 - Name:  Grazia Maszak-Prato  Project Role: UX/UI Lead LinkedIn: [LinkedIn](https://linkedin.com/in/graziaprato)
 - Name:  Vijaya Sekar  Project Role:  Technical and Knowledge Graph Lead LinkedIn: [LinkedIn](https://linkedin.com/in/vijaya-sekar)
 - Name:  Robert Yates Project Role:  Additional Analysis 
-- Name:  Will Isenberg Project Role:  Front-End UI Designer 
+- Name:  Will Isenberg Project Role:  Front-End UI Designer  LinkedIn: [LinkedIn](https://www.linkedin.com/in/will-isenberg/) 
