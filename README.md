@@ -88,5 +88,5 @@ Link to deployed User Interface, [Homeless Resource Database](homeless-resource.
 - Name:  Garrett Smith  Project Role:  Business and Project Mgmt Lead  LinkedIn: [LinkedIn](https://linkedin.com/in/garrett55smith)
 - Name:  Grazia Maszak-Prato  Project Role: UX/UI Lead LinkedIn: [LinkedIn](https://linkedin.com/in/graziaprato)
 - Name:  Vijaya Sekar  Project Role:  Technical and Knowledge Graph Lead LinkedIn: [LinkedIn](https://linkedin.com/in/vijaya-sekar)
-- Name:  Robert Yates Project Role:  Additional Analysis 
+- Name:  Robert Yates Project Role:  Additional Analysis [LinkedIn](https://www.linkedin.com/in/rwyates/)
 - Name:  Will Isenberg Project Role:  Front-End UI Designer  LinkedIn: [LinkedIn](https://www.linkedin.com/in/will-isenberg/) 
