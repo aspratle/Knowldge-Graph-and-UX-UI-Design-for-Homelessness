@@ -68,7 +68,7 @@ The user will be able to search an address, find their current location, and vie
 
 ### Interface Images 
 
-![Final Interface](images/finalinterface.png)
+![Final Interface](images/interface_app.png)
 
 Link to deployed User Interface, [Homeless Resource Database](homeless-resource.surge.sh)
 
