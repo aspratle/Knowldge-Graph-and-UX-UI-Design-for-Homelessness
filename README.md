@@ -93,10 +93,10 @@ The user will be able to search an address, find their current location, and vie
 
 ![Final Interface](images/interface_app.png)
 
-Web implementation
+#### Web prototype
 Link to deployed User Interface, [Homeless Resource Database](https://homeless-resource.surge.sh/)
 
-Final design proposal for future implementation
+#### Final design proposal for future implementation
 ![Final Design Only Image](images/graziaappdesign.png)
 
 ## Recommendations & Insights 
