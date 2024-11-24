@@ -58,7 +58,7 @@ The ontology, parent-child nodes, data cleanup were all done manually.  After th
 ![SystemNode](images/location.png)
 
 5. NeoDash dashboard is built on top of the KG to enable search capabilities.
-[![Watch Video](https://img.youtube.com/vi/xvweZJlhrBs/maxresdefault.jpg)](https://youtu.be/xvweZJlhrBs)
+[![Watch Video](images/dashboard.png)](https://youtu.be/xvweZJlhrBs)
 
 
 ## UX/UI Design
