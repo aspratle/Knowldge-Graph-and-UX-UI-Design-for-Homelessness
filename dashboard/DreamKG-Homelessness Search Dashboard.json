@@ -1,0 +1,287 @@
+{
+  "uuid": "ec136b71-3d40-45cf-86fa-25b9c4dbce78",
+  "title": "Dream KG - Homelessness",
+  "version": "2.4",
+  "settings": {
+    "pagenumber": 0,
+    "editable": true,
+    "fullscreenEnabled": false,
+    "parameters": {
+      "neodash_dream_kg_nodename_1": [],
+      "neodash_dream_kg_nodename_1_display": []
+    },
+    "theme": "light"
+  },
+  "pages": [
+    {
+      "title": "Search",
+      "reports": [
+        {
+          "id": "24e5027d-c5c9-4677-9311-9e2090af107a",
+          "title": "Filter",
+          "query": "MATCH (n:`DREAM_KG`) \nWHERE toLower(toString(n.`nodeName`)) CONTAINS toLower($input) \nRETURN DISTINCT n.`nodeName` as value,  n.`nodeName` as display ORDER BY size(toString(value)) ASC LIMIT 5",
+          "width": 24,
+          "height": 2,
+          "x": 0,
+          "y": 0,
+          "type": "select",
+          "selection": {},
+          "settings": {
+            "refreshButtonEnabled": true,
+            "type": "Node Property",
+            "entityType": "DREAM_KG",
+            "propertyType": "nodeName",
+            "propertyTypeDisplay": "nodeName",
+            "parameterName": "neodash_dream_kg_nodename_1",
+            "id": "1",
+            "description": "Keyword",
+            "multiSelector": true
+          },
+          "schema": []
+        },
+        {
+          "id": "f9f90abf-1d47-49fa-ac8e-b2bd85eaec95",
+          "title": "Graph View",
+          "query": "CALL {\n    MATCH (amenity:DREAM_KG{nodeType: 'Amenity'})<-[:hasAmenity]-(service:DREAM_KG{nodeType: 'Service'}) WHERE amenity.nodeName in $neodash_dream_kg_nodename_1\nRETURN service\nUNION ALL\nMATCH (location:DREAM_KG{nodeType: 'Location'})<-[:locatedAt]-(service:DREAM_KG{nodeType: 'Service'}) WHERE location.nodeName in $neodash_dream_kg_nodename_1\nRETURN service\nUNION ALL\nMATCH (org:DREAM_KG{nodeType: 'Organization'})-[:hasChild]->(program:DREAM_KG{nodeType: 'ProgramOrFacility'})-[:hasChild]->(service:DREAM_KG{nodeType: 'Service'}) WHERE org.nodeName in $neodash_dream_kg_nodename_1\nRETURN service\nUNION ALL\nMATCH (program:DREAM_KG{nodeType: 'ProgramOrFacility'})-[:hasChild]->(service:DREAM_KG{nodeType: 'Service'}) WHERE program.nodeName in $neodash_dream_kg_nodename_1\nRETURN service\nUNION ALL\nMATCH (keyword:DREAM_KG{nodeType: 'NLPComputed'})-->(service:DREAM_KG{nodeType: 'Service'}) WHERE keyword.nodeName in $neodash_dream_kg_nodename_1\nRETURN service\nUNION ALL\nMATCH (neighborhood:DREAM_KG{nodeType: 'Neighborhood'})<--(service:DREAM_KG{nodeType: 'Service'}) WHERE neighborhood.nodeName in $neodash_dream_kg_nodename_1\nRETURN service\n}\nWITH service\nOPTIONAL MATCH (org:DREAM_KG{nodeType: 'Organization'})-[r0:hasChild]->(program:DREAM_KG{nodeType: 'ProgramOrFacility'})-[r1:hasChild]->(service)\nOPTIONAL MATCH (loc:DREAM_KG{nodeType: 'Location'})<-[r2:locatedAt]-(service)\nOPTIONAL MATCH (amenity:DREAM_KG{nodeType: 'Amenity'})<-[r3:hasAmenity]-(service)\nOPTIONAL MATCH (keyword:DREAM_KG{nodeType: 'NLPComputed'})-[r4]->(service)\nOPTIONAL MATCH (neighborhood:DREAM_KG{nodeType: 'Neighborhood'})<-[r5:hasNeighborhood]-(service)\nOPTIONAL MATCH (service2:DREAM_KG{nodeType: 'Service'})<-[r6:hasNextStop]-(service)\nRETURN org, r0, program, r1, service, r2, loc, r3, amenity, r4, keyword, r5, neighborhood, r6, service2",
+          "width": 24,
+          "height": 4,
+          "x": 0,
+          "y": 2,
+          "type": "graph",
+          "selection": {
+            "DREAM_KG": "nodeName",
+            "RESOURCE": "nodeName",
+            "hasChild": "(label)",
+            "locatedAt": "(label)",
+            "hasAmenity": "(label)",
+            "nodeDescContains": "(label)",
+            "hasNeighborhood": "(label)",
+            "requirementTextContains": "(label)",
+            "recommendedForTextContains": "(label)"
+          },
+          "settings": {
+            "fullscreenEnabled": true
+          },
+          "schema": [
+            [
+              "DREAM_KG",
+              "nodeName",
+              "identifier",
+              "createdDate",
+              "srcSheet",
+              "startTime",
+              "nodeCategory",
+              "endTime",
+              "nodeType",
+              "abbreviation",
+              "elementType",
+              "operation",
+              "status",
+              "zipCode",
+              "requirements",
+              "address",
+              "latitude",
+              "recommendedFor",
+              "holidayException",
+              "schedule",
+              "phone",
+              "streetAddress",
+              "nodeDesc",
+              "state",
+              "longitude",
+              "city",
+              "county",
+              "accuracy",
+              "countyCode",
+              "countryCode",
+              "stateCode",
+              "communityCode",
+              "version",
+              "score"
+            ],
+            [
+              "RESOURCE",
+              "nodeName",
+              "identifier",
+              "createdDate",
+              "srcSheet",
+              "startTime",
+              "nodeCategory",
+              "endTime",
+              "nodeType",
+              "abbreviation",
+              "elementType",
+              "operation",
+              "status",
+              "zipCode",
+              "requirements",
+              "address",
+              "latitude",
+              "recommendedFor",
+              "holidayException",
+              "schedule",
+              "phone",
+              "streetAddress",
+              "nodeDesc",
+              "state",
+              "longitude",
+              "city",
+              "county",
+              "accuracy",
+              "countyCode",
+              "countryCode",
+              "stateCode",
+              "communityCode",
+              "version",
+              "score"
+            ],
+            [
+              "hasChild",
+              "createdDate",
+              "startTime",
+              "endTime",
+              "status"
+            ],
+            [
+              "locatedAt",
+              "createdDate",
+              "startTime",
+              "locZipCode",
+              "endTime",
+              "svcZipCode",
+              "status"
+            ],
+            [
+              "hasAmenity",
+              "createdDate",
+              "startTime",
+              "endTime",
+              "status"
+            ],
+            [
+              "nodeDescContains",
+              "createdDate",
+              "startTime",
+              "endTime",
+              "status"
+            ],
+            [
+              "hasNeighborhood",
+              "createdDate",
+              "startTime",
+              "endTime",
+              "status"
+            ],
+            [
+              "requirementTextContains",
+              "createdDate",
+              "startTime",
+              "endTime",
+              "status"
+            ],
+            [
+              "recommendedForTextContains",
+              "createdDate",
+              "startTime",
+              "endTime",
+              "status"
+            ]
+          ]
+        },
+        {
+          "id": "f7ba192a-fbcc-4cb8-a361-899001b9a293",
+          "title": "Location",
+          "query": "CALL {\n   MATCH (amenity:DREAM_KG{nodeType: 'Amenity'})<-[:hasAmenity]-(service:DREAM_KG{nodeType: 'Service'}) WHERE amenity.nodeName in $neodash_dream_kg_nodename_1\nRETURN service\nUNION ALL\nMATCH (location:DREAM_KG{nodeType: 'Location'})<-[:locatedAt]-(service:DREAM_KG{nodeType: 'Service'}) WHERE location.nodeName in $neodash_dream_kg_nodename_1\nRETURN service\nUNION ALL\nMATCH (org:DREAM_KG{nodeType: 'Organization'})-[:hasChild]->(program:DREAM_KG{nodeType: 'ProgramOrFacility'})-[:hasChild]->(service:DREAM_KG{nodeType: 'Service'}) WHERE org.nodeName in $neodash_dream_kg_nodename_1\nRETURN service\nUNION ALL\nMATCH (program:DREAM_KG{nodeType: 'ProgramOrFacility'})-[:hasChild]->(service:DREAM_KG{nodeType: 'Service'}) WHERE program.nodeName in $neodash_dream_kg_nodename_1\nRETURN service\nUNION ALL\nMATCH (keyword:DREAM_KG{nodeType: 'NLPComputed'})-->(service:DREAM_KG{nodeType: 'Service'}) WHERE keyword.nodeName in $neodash_dream_kg_nodename_1\nRETURN service\nUNION ALL\nMATCH (neighborhood:DREAM_KG{nodeType: 'Neighborhood'})<--(service:DREAM_KG{nodeType: 'Service'}) WHERE neighborhood.nodeName in $neodash_dream_kg_nodename_1\nRETURN service\n}\nWITH service\nOPTIONAL MATCH (service)-[r:hasNextStop]->(otherService)\nRETURN service, r, otherService",
+          "width": 24,
+          "height": 6,
+          "x": 0,
+          "y": 6,
+          "type": "map",
+          "selection": {
+            "DREAM_KG": "address",
+            "RESOURCE": "nodeName"
+          },
+          "settings": {
+            "fullscreenEnabled": true
+          },
+          "schema": [
+            [
+              "DREAM_KG",
+              "nodeName",
+              "identifier",
+              "zipCode",
+              "requirements",
+              "address",
+              "srcSheet",
+              "latitude",
+              "nodeCategory",
+              "nodeType",
+              "abbreviation",
+              "recommendedFor",
+              "holidayException",
+              "schedule",
+              "createdDate",
+              "phone",
+              "streetAddress",
+              "nodeDesc",
+              "startTime",
+              "endTime",
+              "state",
+              "elementType",
+              "operation",
+              "status",
+              "longitude"
+            ],
+            [
+              "RESOURCE",
+              "nodeName",
+              "identifier",
+              "zipCode",
+              "requirements",
+              "address",
+              "srcSheet",
+              "latitude",
+              "nodeCategory",
+              "nodeType",
+              "abbreviation",
+              "recommendedFor",
+              "holidayException",
+              "schedule",
+              "createdDate",
+              "phone",
+              "streetAddress",
+              "nodeDesc",
+              "startTime",
+              "endTime",
+              "state",
+              "elementType",
+              "operation",
+              "status",
+              "longitude"
+            ]
+          ]
+        },
+        {
+          "id": "3e995505-ebe4-4715-bebf-539e02724af7",
+          "title": "DrillDown",
+          "query": "CALL {\n   MATCH (amenity:DREAM_KG{nodeType: 'Amenity'})<-[:hasAmenity]-(service:DREAM_KG{nodeType: 'Service'}) WHERE amenity.nodeName in $neodash_dream_kg_nodename_1\nRETURN service\nUNION ALL\nMATCH (location:DREAM_KG{nodeType: 'Location'})<-[:locatedAt]-(service:DREAM_KG{nodeType: 'Service'}) WHERE location.nodeName in $neodash_dream_kg_nodename_1\nRETURN service\nUNION ALL\nMATCH (org:DREAM_KG{nodeType: 'Organization'})-[:hasChild]->(program:DREAM_KG{nodeType: 'ProgramOrFacility'})-[:hasChild]->(service:DREAM_KG{nodeType: 'Service'}) WHERE org.nodeName in $neodash_dream_kg_nodename_1\nRETURN service\nUNION ALL\nMATCH (program:DREAM_KG{nodeType: 'ProgramOrFacility'})-[:hasChild]->(service:DREAM_KG{nodeType: 'Service'}) WHERE program.nodeName in $neodash_dream_kg_nodename_1\nRETURN service\nUNION ALL\nMATCH (keyword:DREAM_KG{nodeType: 'NLPComputed'})-->(service:DREAM_KG{nodeType: 'Service'}) WHERE keyword.nodeName in $neodash_dream_kg_nodename_1\nRETURN service\nUNION ALL\nMATCH (neighborhood:DREAM_KG{nodeType: 'Neighborhood'})<--(service:DREAM_KG{nodeType: 'Service'}) WHERE neighborhood.nodeName in $neodash_dream_kg_nodename_1\nRETURN service\n}\nWITH service\nOPTIONAL MATCH (org:DREAM_KG{nodeType: 'Organization'})-[r0:hasChild]->(program:DREAM_KG{nodeType: 'ProgramOrFacility'})-[r1:hasChild]->(service)\nOPTIONAL MATCH (loc:DREAM_KG{nodeType: 'Location'})<-[r2:locatedAt]-(service)\nOPTIONAL MATCH (amenity:DREAM_KG{nodeType: 'Amenity'})<-[r3:hasAmenity]-(service)\nRETURN service.nodeName AS Service, service AS serviceNode, loc AS Location, \nCOLLECT(DISTINCT amenity.nodeName) AS Amenities, org.nodeName AS Organization, \nprogram.nodeName AS FacilityOrProgram, \nservice.streetAddress + ', ' + service.city + ', ' + service.state + ', ' + service.zipCode AS Address, \nservice.nodeDesc AS Description, service.requirements As Requirements, service.schedule AS Schedule",
+          "width": 24,
+          "height": 4,
+          "x": 0,
+          "y": 12,
+          "type": "table",
+          "selection": {},
+          "settings": {
+            "fullscreenEnabled": true,
+            "downloadImageEnabled": true
+          }
+        }
+      ]
+    }
+  ],
+  "parameters": {},
+  "extensions": {
+    "active": true,
+    "activeReducers": []
+  }
+}

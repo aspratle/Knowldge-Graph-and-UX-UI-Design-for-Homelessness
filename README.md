@@ -44,17 +44,22 @@ Two knowledge graphs were created for the project.  The first knowledge graph fo
 ## Knowledge Graph (non-LLM approach) 
 The ontology, parent-child nodes, data cleanup were all done manually.  After the nodes and relationships were created, a final graph was displayed. View full code [Here](notebooks/DREAM-KG Mod 2.ipynb).
 
-1.  The original system node with corresponding metadata was created
-![SystemNode](images/manualmetadatanode.png)
+1. Hub-Spoke Graph Data Model - Supports metadata management, including cardinality constraints, hierarchy representation, and node-type-specific property configurations. It also incorporates auditing capabilities, where each spoke entity captures a snapshot of the hub before any modifications, ensuring a record of changes for traceability.
 
-2.  Parent-Child Relationship nodes were created to determine a "parent-child model"
-![Parent/Child](images/childparentrelation.png)
+![SystemNode](images/hub-spoke.png)
 
-3.  Different node types that corrresponded to the data ("Service", "Organization", "Neighborhood", etc.) were created
-![NodeTypes](images/nodetypes.png)
+2. DreamKG Homelessness Graph Data Model
+![SystemNode](images/DREAM-KG-MOD-2.png)
 
-4.  Model was created
-6.  Knowledge Graph Generated 
+3. Python NLP toolkit used to extract information such as amenities, eligibility criteria, and requirements from text by leveraging techniques like named entity recognition (NER), keyword extraction, and text classification.
+![SystemNode](images/nlp.png)
+
+4. Location data enrichment using the pgeocode Python module is an efficient way to extract geographical details such as latitude, longitude, city, state, or country from postal codes. This enhances the dataset by linking textual information to precise locations, which is valuable for visualization, reporting, or further geospatial analysis.
+![SystemNode](images/location.png)
+
+5. NeoDash dashboard is built on top of the KG to enable search capabilities.
+[![Watch Video](https://img.youtube.com/vi/xvweZJlhrBs/maxresdefault.jpg)](https://youtu.be/xvweZJlhrBs)
+
 
 ## UX/UI Design
 
