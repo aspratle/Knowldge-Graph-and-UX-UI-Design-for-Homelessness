@@ -75,8 +75,8 @@ Link to deployed User Interface, [Homeless Resource Database](homeless-resource.
 ## Recommendations & Insights 
 
 1.  Although an LLM can take a custom ontology and generate Cypher code needed for a Knowledge Graph, automatic post-processing of the code would need to happen in order for the Cypher code to work.  Recommend building out this automation.
-2.  A manual knowledge graph approach can include more granualarity and supervised NER techniques; however, handling "time features" is cubbersome and may require more pre and post processing of the data.
-3.  An updated UX/UI interface using the created Knowledge Graph model is needed; however, using the prototype design (icons, search, etc.) is ideal for our stakeholder's literacy level and use.
+2.  A manual knowledge graph approach can include more granualarity and supervised NER techniques; however, it may require more pre and post processing of the data.
+3.  An updated UX/UI interface using the created Knowledge Graph model is needed; however, using the prototype design (icons, search, etc.) is ideal for our stakeholders' literacy level and use.
 
 ## Future Steps 
 
