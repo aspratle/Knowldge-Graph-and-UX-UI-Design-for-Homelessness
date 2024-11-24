@@ -68,7 +68,6 @@ The ontology, parent-child nodes, data cleanup were all done manually.  After th
 
 ### Interface Images 
 
-
 ![Final Interface](images/finalinterface.png)
 
 Link to deployed User Interface, [Homeless Resource Database](homeless-resource.surge.sh)
@@ -76,8 +75,8 @@ Link to deployed User Interface, [Homeless Resource Database](homeless-resource.
 ## Recommendations & Insights 
 
 1.  Although an LLM can take a custom ontology and generate Cypher code needed for a Knowledge Graph, automatic post-processing of the code would need to happen in order for the Cypher code to work.  Recommend building out this automation.
-2.  A manual knowledge graph approach can include more granualarity; however, handling "time features" is cubbersome
-3.  
+2.  A manual knowledge graph approach can include more granualarity and supervised NER techniques; however, handling "time features" is cubbersome and may require more pre and post processing of the data.
+3.  An updated UX/UI interface using the created Knowledge Graph model is needed; however, using the prototype design (icons, search, etc.) is ideal for our stakeholder's literacy level and use.
 
 ## Future Steps 
 
@@ -85,13 +84,11 @@ Link to deployed User Interface, [Homeless Resource Database](homeless-resource.
 2.  Refining our ontology is an ongoing process and would need to be updated as new data comes in
 3.  The UX/UI design will be updated for enhanced functionality and to expand across multiple end-user stories
 
-## Additional Analysis 
-### Benefit Analysis 
 
 ## Contributors 
 - Name:  Angelica Spratley (Jelly)  Project Role:  Technical and Knowledge Graph Lead  LinkedIn: [LinkedIn](https://linkedin.com/in/angelicaspratley)
 - Name:  Garrett Smith  Project Role:  Business and Project Mgmt Lead  LinkedIn: [LinkedIn](https://linkedin.com/in/garrett55smith)
 - Name:  Grazia Maszak-Prato  Project Role: UX/UI Lead LinkedIn: [LinkedIn](https://linkedin.com/in/graziaprato)
 - Name:  Vijaya Sekar  Project Role:  Technical and Knowledge Graph Lead LinkedIn: [LinkedIn](https://linkedin.com/in/vijaya-sekar)
-- Name:  Robert Yates Project Role:  Additional Analysis [LinkedIn](https://www.linkedin.com/in/rwyates/)
+- Name:  Robert Yates Project Role:  Additional Analysis (Benefits Calculator) [LinkedIn](https://www.linkedin.com/in/rwyates/)
 - Name:  Will Isenberg Project Role:  Front-End UI Designer  LinkedIn: [LinkedIn](https://www.linkedin.com/in/will-isenberg/) 
