@@ -64,7 +64,7 @@ The ontology, parent-child nodes, data cleanup were all done manually.  After th
 ## UX/UI Design
 
 ### End User Story 
-
+The user will be able to search an address, find their current location, and view a list of resources that are sorted by distance and filtered by which icons they clicked. Each venue will also link to the Google Maps address of the venue.
 
 ### Interface Images 
 
@@ -75,7 +75,7 @@ Link to deployed User Interface, [Homeless Resource Database](homeless-resource.
 ## Recommendations & Insights 
 
 1.  Although an LLM can take a custom ontology and generate Cypher code needed for a Knowledge Graph, automatic post-processing of the code would need to happen in order for the Cypher code to work.  Recommend building out this automation.
-2.  A manual knowledge graph approach can include more granualarity and supervised NER techniques; however, it may require more pre and post processing of the data.
+2.  A manual knowledge graph approach can include more granularity and supervised NER techniques; however, it may require more pre and post processing of the data.
 3.  An updated UX/UI interface using the created Knowledge Graph model is needed; however, using the prototype design (icons, search, etc.) is ideal for our stakeholders' literacy level and use.
 
 ## Future Steps 
