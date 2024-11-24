@@ -66,11 +66,13 @@ The ontology, parent-child nodes, data cleanup were all done manually.  After th
 ### End User Story 
 The user will be able to search an address, find their current location, and view a list of resources that are sorted by distance and filtered by which icons they clicked. Each venue will also link to the Google Maps address of the venue.
 
-### Interface Images 
+### Interface Images and Demo 
 
 ![Final Interface](images/interface_app.png)
 
 Link to deployed User Interface, [Homeless Resource Database](https://homeless-resource.surge.sh/)
+
+![Final App Design Only Image](images/graziaappdesign.png)
 
 ## Recommendations & Insights 
 
