@@ -63,7 +63,30 @@ The ontology, parent-child nodes, data cleanup were all done manually.  After th
 
 ## UX/UI Design
 
-### End User Story 
+### Goals 
+To help People Experiencing Homelessness (PEH) find resources near them, so that they can improve their quality of life.
+
+### Target Users
+- People experiencing homelessness with access to smarthphone with working internet.
+- English speakers (initially)
+
+### Features of the tool
+- Find services por PEHs based on their location or distance from specific street
+- Provide information about self-care services available in their areas
+
+### Design considerations
+- Minimal and intuitive flow
+- Easy to understand imagery/iconography
+- Use of simple language
+
+### Task Flow
+1. Input location information (State, City, Street name) or alternatively use the dinf location feature
+2. Select the type of services that the users want to find
+3. Show list of facilities and the services they offer
+4. View detail page for each faiclity showing: Name, address, phone number, services available, time of services, link to Google Maps with the address of the venue.
+5. Map view that shows filtered facilities
+   
+### Taks flow sample
 The user will be able to search an address, find their current location, and view a list of resources that are sorted by distance and filtered by which icons they clicked. Each venue will also link to the Google Maps address of the venue.
 
 ### Interface Images and Demo 
@@ -72,7 +95,7 @@ The user will be able to search an address, find their current location, and vie
 
 Link to deployed User Interface, [Homeless Resource Database](https://homeless-resource.surge.sh/)
 
-![Final App Design Only Image](images/graziaappdesign.png)
+![Final Design Only Image](images/graziaappdesign.png)
 
 ## Recommendations & Insights 
 
