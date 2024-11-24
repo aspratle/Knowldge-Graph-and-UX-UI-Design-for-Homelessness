@@ -57,7 +57,7 @@ The ontology, parent-child nodes, data cleanup were all done manually.  After th
 4. Location data enrichment using the pgeocode Python module is an efficient way to extract geographical details such as latitude, longitude, city, state, or country from postal codes. This enhances the dataset by linking textual information to precise locations, which is valuable for visualization, reporting, or further geospatial analysis.
 ![SystemNode](images/location.png)
 
-5. NeoDash dashboard is built on top of the KG to enable search capabilities.
+5. NeoDash dashboard was tested to verify its search capabilities
 [![Watch Video](images/dashboard.png)](https://youtu.be/xvweZJlhrBs)
 
 
@@ -82,9 +82,10 @@ Link to deployed User Interface, [Homeless Resource Database](https://homeless-r
 
 ## Future Steps 
 
-1.  Our Knowledge Graph and UX/UI design was purely focused on People Experiencing Homelessness (PEH) we would like to expand it to government stakeholders as well
-2.  Refining our ontology is an ongoing process and would need to be updated as new data comes in
-3.  The UX/UI design will be updated for enhanced functionality and to expand across multiple end-user stories
+1. Our Knowledge Graph and UX/UI design was purely focused on People Experiencing Homelessness (PEH) we would like to expand it to government stakeholders as well
+2. Non-LLM Approach, a schedule filter sub-hierarchy would be designed and implemented 
+3. Optimize the prototype for mobile use, and implement the visual design to improve usability.
+4. Network of case workers with credentials and contact of service providers 
 
 
 ## Contributors 
