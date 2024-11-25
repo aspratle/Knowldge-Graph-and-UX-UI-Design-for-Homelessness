@@ -57,20 +57,47 @@ The ontology, parent-child nodes, data cleanup were all done manually.  After th
 4. Location data enrichment using the pgeocode Python module is an efficient way to extract geographical details such as latitude, longitude, city, state, or country from postal codes. This enhances the dataset by linking textual information to precise locations, which is valuable for visualization, reporting, or further geospatial analysis.
 ![SystemNode](images/location.png)
 
-5. NeoDash dashboard is built on top of the KG to enable search capabilities.
+5. NeoDash dashboard was tested to verify its search capabilities
 [![Watch Video](images/dashboard.png)](https://youtu.be/xvweZJlhrBs)
 
 
 ## UX/UI Design
 
-### End User Story 
+### Goals 
+To help People Experiencing Homelessness (PEH) find resources near them, so that they can improve their quality of life.
+
+### Target Users
+- People experiencing homelessness with access to smarthphone with working internet.
+- English speakers (initially)
+
+### Features of the tool
+- Find services por PEHs based on their location or distance from specific street
+- Provide information about self-care services available in their areas
+
+### Design considerations
+- Minimal and intuitive flow
+- Easy to understand imagery/iconography
+- Use of simple language
+
+### Task Flow
+1. Input location information (State, City, Street name) or alternatively use the dinf location feature
+2. Select the type of services that the users want to find
+3. Show list of facilities and the services they offer
+4. View detail page for each faiclity showing: Name, address, phone number, services available, time of services, link to Google Maps with the address of the venue.
+5. Map view that shows filtered facilities
+   
+### Taks flow sample
 The user will be able to search an address, find their current location, and view a list of resources that are sorted by distance and filtered by which icons they clicked. Each venue will also link to the Google Maps address of the venue.
 
-### Interface Images 
+### Interface Images and Demo 
 
 ![Final Interface](images/interface_app.png)
 
+#### Web prototype
 Link to deployed User Interface, [Homeless Resource Database](https://homeless-resource.surge.sh/)
+
+#### Final design proposal for future implementation
+![Final Design Only Image](images/graziaappdesign.png)
 
 ## Recommendations & Insights 
 
@@ -80,9 +107,10 @@ Link to deployed User Interface, [Homeless Resource Database](https://homeless-r
 
 ## Future Steps 
 
-1.  Our Knowledge Graph and UX/UI design was purely focused on People Experiencing Homelessness (PEH) we would like to expand it to government stakeholders as well
-2.  Refining our ontology is an ongoing process and would need to be updated as new data comes in
-3.  The UX/UI design will be updated for enhanced functionality and to expand across multiple end-user stories
+1. Our Knowledge Graph and UX/UI design was purely focused on People Experiencing Homelessness (PEH) we would like to expand it to government stakeholders as well
+2. Non-LLM Approach, a schedule filter sub-hierarchy would be designed and implemented 
+3. Optimize the prototype for mobile use, and implement the visual design to improve usability.
+4. Network of case workers with credentials and contact of service providers 
 
 
 ## Contributors 
